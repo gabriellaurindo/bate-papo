@@ -1,0 +1,11 @@
+{
+  "name": "api-node-bate-papo",
+  "version": "1.0.0",
+  "description": "Api criada para um bate-papo em tempo real.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Laurindo",
+  "license": "ISC"
+}
