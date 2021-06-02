@@ -1,28 +1,42 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Cabecalho class="child"/>
+    <BemVindo class="child"/>
+    <BotaoRegistro class="child"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BotaoRegistro from './components/BotaoRegistro'
+import Cabecalho from './components/Cabecalho'
+import BemVindo from './components/BemVindo'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BotaoRegistro,
+    Cabecalho,
+    BemVindo
   }
 }
 </script>
 
-<style>
+<style >
+
+body{
+  background-image: url("../public/img2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
 </style>
