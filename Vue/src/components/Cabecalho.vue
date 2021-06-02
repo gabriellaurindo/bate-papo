@@ -1,12 +1,18 @@
 <template>
   <div>
-    <button class="register">Registrar</button>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
   </div>
 </template>
 
 <script>
 export default {
-    name:'BotaoRegistro',
+    name:'Cabecalho',
 }
 //box-shadow: 60px -16px teal;
 </script>
@@ -16,23 +22,19 @@ export default {
   
   @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Open+Sans:wght@800&display=swap');
 
-  .register  {
-    background-color:#41B883;
-    color: white;
-    padding: 1%;
-    outline: none;
-    border: none;
-    border-radius: 5%;
-    font-family: Crimson;
-    font-size: 200%;
+  .menu ul{
+    display: flex;
+    flex-direction:row;
+    list-style: none;
   }
-  
-  .register:hover{
-    
-    background-color: white;
-    color: #41B883;
-    font-size: 220%;
-    transition: 1s;
-    box-shadow: 5px 5px teal;
+
+  .menu ul li {
+     flex: 1;
+  }
+
+  .menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Crimson;
   }
 </style>
