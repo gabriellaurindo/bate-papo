@@ -22,6 +22,10 @@ export default {
   
   @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Open+Sans:wght@800&display=swap');
 
+  .menu{
+    padding: 15px;
+  }
+
   .menu ul{
     display: flex;
     flex-direction:row;
@@ -34,7 +38,7 @@ export default {
 
   .menu ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: Crimson;
   }
 </style>

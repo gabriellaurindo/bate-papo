@@ -1,7 +1,7 @@
 <template>
   <div class="block">
     <div>
-      <h2>Você está procurando por um Chat novo, bonito e seguro? Nós temos a solução!</h2>  
+      <h1>Você está procurando por um Chat novo, bonito e seguro? Nós temos a solução!</h1>  
     </div>
     <div>
       <p>Chegou o Vubo, o seu novo chat de diversão, totalmente seguro e atualizado com as melhores tecnologias do mercado. Vem pro Vubo você também!</p>
@@ -26,9 +26,9 @@ export default {
     flex-direction:column;
     list-style: none;
     width: 40%;
-  }
+    color: white;
+    padding: 12% 1% 0% 2%;
+    text-align: left;
 
-  .block div{
-     flex: 1;
   }
 </style>

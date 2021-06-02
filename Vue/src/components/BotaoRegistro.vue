@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <button class="register">Registrar</button>
   </div>
 </template>
@@ -16,14 +16,18 @@ export default {
   
   @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Open+Sans:wght@800&display=swap');
 
+  .main{
+    display: flex;
+    padding: 3% 0px 0% 15%;
+  }
+
   .register  {
-    background-color:#41B883;
+    background-color:#02a855;
     color: white;
     padding: 1%;
     outline: none;
     border: none;
-    border-radius: 5%;
-    font-family: Crimson;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 200%;
   }
   
@@ -34,5 +38,6 @@ export default {
     font-size: 220%;
     transition: 1s;
     box-shadow: 5px 5px teal;
+    border-radius: 5%;
   }
 </style>
