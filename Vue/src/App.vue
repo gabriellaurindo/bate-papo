@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Cabecalho/>
+    <BemVindo/>
     <BotaoRegistro/>
   </div>
 </template>
@@ -8,12 +9,14 @@
 <script>
 import BotaoRegistro from './components/BotaoRegistro'
 import Cabecalho from './components/Cabecalho'
+import BemVindo from './components/BemVindo'
 
 export default {
   name: 'App',
   components: {
     BotaoRegistro,
-    Cabecalho
+    Cabecalho,
+    BemVindo
   }
 }
 </script>
