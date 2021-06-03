@@ -35,9 +35,11 @@ export default {
 
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 770px){
     .block{
       width: 85vw;
+      align-items: center;
+      text-align: center;
     }
   }
 </style>

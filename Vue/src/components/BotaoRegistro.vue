@@ -17,7 +17,7 @@ export default {
   .register  {
     background-color:#643083;
     color: white;
-    padding: 2%;
+    padding: 15px;
     outline: none;
     border: none;
     font-family:Cambria;
