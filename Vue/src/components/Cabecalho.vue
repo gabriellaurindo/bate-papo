@@ -30,15 +30,24 @@ export default {
     display: flex;
     flex-direction:row;
     list-style: none;
+    padding: 0;
   }
 
   .menu ul li {
      flex: 1;
+     width: 100%;
+     height: 100%;
   }
 
   .menu ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(209, 209, 209);
     font-family: Crimson;
   }
+
+  .menu ul li a:hover{
+    color: rgb(255, 255, 255);
+    transition-duration: 1s;
+  }
+
 </style>
