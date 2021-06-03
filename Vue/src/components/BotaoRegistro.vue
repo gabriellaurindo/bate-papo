@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <button class="register">Registrar</button>
+    <button class="register button">Registrar</button>
   </div>
 </template>
 
@@ -16,28 +16,22 @@ export default {
   
   @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Open+Sans:wght@800&display=swap');
 
-  .main{
-    display: flex;
-    padding: 3% 0px 0% 15%;
-  }
-
   .register  {
-    background-color:#02a855;
+    background-color:#643083;
     color: white;
-    padding: 1%;
+    padding: 2%;
     outline: none;
     border: none;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 200%;
+    font-family:Cambria;
+    font-size: 2rem;
+    cursor: pointer;
   }
   
   .register:hover{
     
     background-color: white;
-    color: #41B883;
+    color:black;
     font-size: 220%;
-    transition: 1s;
-    box-shadow: 5px 5px teal;
-    border-radius: 5%;
+    transition: 0.5s;
   }
 </style>

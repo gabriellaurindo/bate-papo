@@ -6,12 +6,18 @@
     <div>
       <p>Chegou o Vubo, o seu novo chat de diversão, totalmente seguro e atualizado com as melhores tecnologias do mercado. Vem pro Vubo você também!</p>
     </div>
+    <BotaoRegistro/>
   </div>
 </template>
 
 <script>
+import BotaoRegistro from './BotaoRegistro'
+
 export default {
     name:'BemVindo',
+    components: {
+    BotaoRegistro
+  }
 }
 //box-shadow: 60px -16px teal;
 </script>
@@ -24,11 +30,16 @@ export default {
   .block{
     display: flex;
     flex-direction:column;
-    list-style: none;
-    width: 40%;
+    width: 35vw;
     color: white;
-    padding: 12% 1% 0% 2%;
+    padding: 5%;
     text-align: left;
 
+  }
+
+  @media (max-width: 600px){
+    .block{
+      width: 85vw;
+    }
   }
 </style>
