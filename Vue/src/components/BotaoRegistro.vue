@@ -16,11 +16,6 @@ export default {
   
   @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Open+Sans:wght@800&display=swap');
 
-  .main{
-    display: flex;
-    padding: 3% 0px 0% 15%;
-  }
-
   .register  {
     background-color:#02a855;
     color: white;
