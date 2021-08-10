@@ -13,13 +13,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  
-  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Open+Sans:wght@800&display=swap');
 
   .register  {
     background-color:#643083;
     color: white;
-    padding: 2%;
+    padding: 15px;
     outline: none;
     border: none;
     font-family:Cambria;

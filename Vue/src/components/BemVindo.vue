@@ -24,7 +24,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
   .block{
     display: flex;
     flex-direction:column;
@@ -35,9 +34,11 @@ export default {
 
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 770px){
     .block{
       width: 85vw;
+      align-items: center;
+      text-align: center;
     }
   }
 </style>
