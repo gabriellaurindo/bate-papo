@@ -3,7 +3,7 @@ const express = require('express')
 const router = express.Router()
 
 //Rota Raiz
-router.get('/User', function (req, res,) {
+router.get('/user', function (req, res,) {
    
 })
    

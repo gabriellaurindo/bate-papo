@@ -1,21 +1,15 @@
-//Importando Módulos
-const User = require("../models/User")
-const Message = require("../models/Message")
+//Importando Models
+const Message = require("../models/MessageModel")
 
-//Função de login
-function SendMessage (req,res){
-    const {conteudo, sender, receiver} = req.body
-    //User.findOne({telefone}).then(remitter =>{
-        //User.findOne({telefone:receiver}).then(taker=>{
-            Message.create({conteudo, sender, receiver}).catch(err =>{
-                console.log("Houve um erro: " + err)
-                res.statusCode = 403
-                res.send({Error:err})
-            })
-            console.log("Deu certo")
+//Função para retornar mensagens com base no sender e receiver
+function ReturnMessage (req,res){
+    const {sender, receiver} = req.body
+        Message.find({$or:[{sender, receiver}, {sender:receiver, receiver:sender}]}).sort({date: 'asc'}).then(messages=>{
             res.statusCode = 201
-            res.send({Mess:"Sucess"})
+            res.send({messages})
+        })
+ 
 }
 
 //Exportando Módulo
-module.exports = SendMessage
+module.exports = ReturnMessage

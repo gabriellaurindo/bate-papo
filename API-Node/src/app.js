@@ -12,14 +12,14 @@ app.use(express.json());
 app.use(cors());
 
 //Importar Rotas
-const index   =   require('../routes/Index')
-const user    =   require('../routes/User')
-const Message =   require('../routes/Message')
+const home   =   require('../routes/HomeRoute')
+const user    =   require('../routes/UserRoute')
+const message =   require('../routes/MessageRoute')
 
 //Usar Rotas
-app.use('/', index)
+app.use('/', home)
 app.use('/', user)
-app.use('/', Message)
+app.use('/', message)
 
 //Importando Banco
 require("../config/database")
