@@ -15,6 +15,11 @@ const userSchema = new Schema({
         require:true,
         unique:true
     },
+    senha:{
+        type:String,
+        require:true,
+        select: false
+    },
     flag:{
         type: String,
         trim: true,
